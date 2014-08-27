@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/content/tiles/BaseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="fixedheader"
+			value="/WEB-INF/content/main/launchSite_header.jsp" />
+		<put-attribute name="customheader" value="" />
+		<put-attribute name="menu" value="/WEB-INF/content/tiles/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/content/tiles/Footer.jsp" />
+	</definition>
+	<definition name="launchSite.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Total Visits" />
+		<put-attribute name="customheader" value="/WEB-INF/content/main/launchSite_customheader.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/content/main/launchSite_body.jsp" />
+	</definition>
+	<definition name="loginerror.tiles" extends="baseLayout">
+		<put-attribute name="title" value="login error" />
+		<put-attribute name="customheader" value="/WEB-INF/content/login/loginerror-customheader.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/content/login/loginerror.jsp" />
+	</definition>
+	<definition name="usersignupresult.tiles" extends="baseLayout">
+		<put-attribute name="title" value="login error" />
+		<put-attribute name="customheader" value="/WEB-INF/content/login/loginerror-customheader.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/content/login/usersignup_result.jsp" />
+	</definition>
+	<definition name="launchUsersignup.tiles" extends="baseLayout">
+		<put-attribute name="title" value="login error" />
+		<put-attribute name="customheader" value="/WEB-INF/content/login/loginerror-customheader.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/content/login/usersignup_result.jsp" />
+	</definition>
+</tiles-definitions>
