@@ -46,13 +46,13 @@
 						<div class="menu-header">
 							<ul id="menu-nav-menu-1" class="menu">
 								<li class="menu-item"><a
-									href="http://designmodo.com/design/">Menu 1</a></li>
+									href="">Menu 1</a></li>
 								<li
 									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18118"><a
-									href="http://designmodo.com/freebies/">Menu 2</a></li>
+									href="">Menu 2</a></li>
 								<li
 									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18124"><a
-									href="http://designmodo.com/tutorials/">Menu 3</a></li>
+									href="">Menu 3</a></li>
 							</ul>
 						</div>
 					</div></li>
@@ -67,7 +67,7 @@
 									href="http://designmodo.com/design/">View Student</a></li>
 								<li
 									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18118"><a
-									href="http://designmodo.com/freebies/">Add Student</a></li>
+									href="">Add Student</a></li>
 							</ul>
 						</div>
 					</div></li>
@@ -79,10 +79,10 @@
 						<div class="menu-header">
 							<ul id="menu-nav-menu-1" class="menu">
 								<li class="menu-item"><a
-									href="http://designmodo.com/design/">Manage NoticeBoard</a></li>
+									href="">Manage NoticeBoard</a></li>
 								<li
 									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18118"><a
-									href="http://designmodo.com/freebies/">Manage Events</a></li>
+									href="">Manage Events</a></li>
 							</ul>
 						</div>
 					</div></li>
@@ -94,7 +94,7 @@
 						<div class="menu-header">
 							<ul id="menu-nav-menu-1" class="menu">
 								<li class="menu-item"><a
-									href="http://designmodo.com/design/">Manage User Roles</a></li>
+									href="">Manage User Roles</a></li>
 							</ul>
 						</div>
 					</div></li>
