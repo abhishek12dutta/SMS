@@ -347,10 +347,11 @@ table tr td {
     float: right;
     height: 10px;
     width: 230px;
-     position: fixed;
+     position: absolute;
     right: 10px;
     top: 70px;
     width: 228px;
+    color:green;
 }
 #ct {
     font-size: 16px;
