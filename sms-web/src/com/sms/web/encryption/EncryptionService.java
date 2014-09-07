@@ -8,7 +8,7 @@ import javax.crypto.spec.SecretKeySpec;
 import org.apache.tomcat.util.codec.binary.Base64;
 
 import com.sms.web.exception.SMSWebException;
-
+//
 public class EncryptionService {
 	//static Log log = LogFactory.getLog(EncryptionService.class);
 
