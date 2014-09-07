@@ -34,6 +34,17 @@ public class UserDetails {
 	@NotNull
 	@Length(min=6, max=6, message = "Userid Should be lenght of 6")
 	private String userid;
+	
+	private String encryptedpassword;
+	
+	public String getEncryptedpassword() {
+		return encryptedpassword;
+	}
+
+	public void setEncryptedpassword(String encryptedpassword) {
+		this.encryptedpassword = encryptedpassword;
+	}
+
 	private UserRoleDetails userRoleDetails;
 
 	public Date getCreationtime() {

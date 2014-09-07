@@ -63,7 +63,7 @@ public class UserSignupAction extends ActionSupport {
 			Set<ConstraintViolation<UserDetails>> violations = validator
 					.validate(userDetails);
 			if(null !=confirmPass && null !=userDetails.getPassword()){
-				if(confirmPass.equals(userDetails.getPassword())){
+				if(!confirmPass.equals(userDetails.getPassword())){
 					addActionError("password not matched");
 				}
 			}
@@ -81,6 +81,8 @@ public class UserSignupAction extends ActionSupport {
 				result = ERROR;
 			}else {
 				userDetails.setCreationtime(new Date());
+				userDetails.setEncryptedpassword(userDetails.getPassword());
+				userDetails.setPassword(null);
 				loginRepository.createUser(userDetails);
 				addActionMessage("User Successfully created");
 			}

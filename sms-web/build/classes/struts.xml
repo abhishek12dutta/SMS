@@ -13,5 +13,27 @@
 			<result-type name="tiles"
 				class="org.apache.struts2.views.tiles.TilesResult" />
 		</result-types>
+		<interceptors>
+			<interceptor name="cachingHeadersInterceptor"
+				class="com.sms.web.interceptor.CachingHeaderInterceptor" />
+			<interceptor name="sessionCheckInterceptor"
+				class="com.sms.web.interceptor.SessionCheckInterceptor" />
+			<interceptor name="passwordRecoveryInterceptor"
+				class="com.sms.web.interceptor.PasswordRecoveryInterceptor" />
+			<interceptor-stack name="defaultSecurityStack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="cachingHeadersInterceptor" />
+				<interceptor-ref name="sessionCheckInterceptor" />
+			</interceptor-stack>
+			<interceptor-stack name="passwordSecuirtyStack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="cachingHeadersInterceptor" />
+				<interceptor-ref name="passwordRecoveryInterceptor" />
+			</interceptor-stack>
+		</interceptors>
+
+		<global-results>
+			<result name="sessionexpired">Session_Timeout.jsp</result>
+		</global-results>
 	</package>
 </struts>
